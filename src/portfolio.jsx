@@ -436,7 +436,7 @@ const PROJECTS = [
     tags: ['Python', 'PyTorch', 'OpenCV', 'FastAPI'],
     color: '#22c55e',
     icon: '🩺',
-    gh: 'https://github.com/soumik7484',
+    gh: 'https://github.com/soumik7484-art',
   },
   {
     title: 'MCQ Vision Solver',
@@ -444,7 +444,7 @@ const PROJECTS = [
     tags: ['React', 'Groq API', 'WebRTC', 'Node.js'],
     color: '#667eea',
     icon: '🎯',
-    gh: 'https://github.com/soumik7484',
+    gh: 'https://github.com/soumik7484-art',
   },
   {
     title: 'Grammar Learning Platform',
@@ -452,7 +452,7 @@ const PROJECTS = [
     tags: ['React', 'Node.js', 'MongoDB', 'Express'],
     color: '#f093fb',
     icon: '📚',
-    gh: 'https://github.com/soumik7484',
+    gh: 'https://github.com/soumik7484-art',
     live: 'https://grammar40.vercel.app',
   },
   {
@@ -461,7 +461,7 @@ const PROJECTS = [
     tags: ['Python', 'LangChain', 'RAG', 'React'],
     color: '#4facfe',
     icon: '⚖️',
-    gh: 'https://github.com/soumik7484',
+    gh: 'https://github.com/soumik7484-art',
   },
   {
     title: 'Object Detection System',
@@ -469,7 +469,7 @@ const PROJECTS = [
     tags: ['Python', 'YOLO', 'OpenCV', 'Streamlit'],
     color: '#f59e0b',
     icon: '👁️',
-    gh: 'https://github.com/soumik7484',
+    gh: 'https://github.com/soumik7484-art',
   },
   {
     title: 'Interactive Portfolio',
@@ -477,7 +477,7 @@ const PROJECTS = [
     tags: ['React', 'CSS', 'GSAP', 'Vite'],
     color: '#ef4444',
     icon: '✨',
-    gh: 'https://github.com/soumik7484',
+    gh: 'https://github.com/soumik7484-art',
   },
 ];
 
@@ -552,7 +552,7 @@ export function ProjectsSection() {
 
         {/* More on GitHub */}
         <div style={{ textAlign: 'center', marginTop: 48, opacity: visible ? 1 : 0, transition: 'opacity 0.7s ease 0.4s' }}>
-          <a href="https://github.com/soumik7484" target="_blank" rel="noreferrer" className="btn-secondary" style={{ display: 'inline-flex' }}>
+          <a href="https://github.com/soumik7484-art" target="_blank" rel="noreferrer" className="btn-secondary" style={{ display: 'inline-flex' }}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
             View all projects on GitHub
           </a>
@@ -692,7 +692,7 @@ export function ContactSection() {
   /* ── animated character helpers ── */
   // GitHub Cat
   const GitHubCat = () => (
-    <a href="https://github.com/soumik7484" target="_blank" rel="noreferrer"
+    <a href="https://github.com/soumik7484-art" target="_blank" rel="noreferrer"
       style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, textDecoration: 'none', cursor: 'pointer' }}
       onMouseEnter={e => { const svg = e.currentTarget.querySelector('.char-cat'); if (svg) svg.style.transform = 'translateY(-6px)'; }}
       onMouseLeave={e => { const svg = e.currentTarget.querySelector('.char-cat'); if (svg) svg.style.transform = ''; }}>
@@ -737,14 +737,14 @@ export function ContactSection() {
       </div>
       <div style={{ textAlign: 'center' }}>
         <div style={{ fontSize: 13, fontWeight: 700, color: '#0a0a0a' }}>GitHub</div>
-        <div style={{ fontSize: 11, color: '#9ca3af', marginTop: 2 }}>@soumik7484</div>
+        <div style={{ fontSize: 11, color: '#9ca3af', marginTop: 2 }}>@soumik7484-art</div>
       </div>
     </a>
   );
 
   // LinkedIn Suited Man
   const LinkedInMan = () => (
-    <a href="https://linkedin.com/in/soumikchatterjee" target="_blank" rel="noreferrer"
+    <a href="https://www.linkedin.com/in/soumik-chatterjee-810aa1386?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer"
       style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, textDecoration: 'none', cursor: 'pointer' }}
       onMouseEnter={e => { const svg = e.currentTarget.querySelector('.char-man'); if (svg) svg.style.transform = 'translateY(-6px)'; }}
       onMouseLeave={e => { const svg = e.currentTarget.querySelector('.char-man'); if (svg) svg.style.transform = ''; }}>
@@ -793,7 +793,7 @@ export function ContactSection() {
 
   // Email Postman
   const EmailPostman = () => (
-    <a href="mailto:soumikchatterjee.dev@gmail.com"
+    <a href="mailto:soumik7484@gmail.com"
       style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, textDecoration: 'none', cursor: 'pointer' }}
       onMouseEnter={e => { const svg = e.currentTarget.querySelector('.char-post'); if (svg) svg.style.transform = 'translateY(-6px)'; }}
       onMouseLeave={e => { const svg = e.currentTarget.querySelector('.char-post'); if (svg) svg.style.transform = ''; }}>
@@ -863,7 +863,7 @@ export function ContactSection() {
 
         {/* CTA */}
         <div style={{ opacity: visible ? 1 : 0, transition: 'opacity 0.7s ease 0.35s' }}>
-          <a href="mailto:soumikchatterjee.dev@gmail.com" data-magnetic className="btn-primary" style={{ fontSize: 16, padding: '16px 36px', borderRadius: 14 }}>
+          <a href="mailto:soumik7484@gmail.com" data-magnetic className="btn-primary" style={{ fontSize: 16, padding: '16px 36px', borderRadius: 14 }}>
             ✉️ Send me an Email
           </a>
         </div>
@@ -885,9 +885,9 @@ export function Footer() {
         <span style={{ fontSize: 12, color: '#9ca3af' }}>© {new Date().getFullYear()} · Built with React & ❤️</span>
         <div style={{ display: 'flex', gap: 16 }}>
           {[
-            { label: 'GitHub', href: 'https://github.com/soumik7484' },
-            { label: 'LinkedIn', href: 'https://linkedin.com/in/soumikchatterjee' },
-            { label: 'Email', href: 'mailto:soumikchatterjee.dev@gmail.com' },
+            { label: 'GitHub', href: 'https://github.com/soumik7484-art' },
+            { label: 'LinkedIn', href: 'https://www.linkedin.com/in/soumik-chatterjee-810aa1386?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
+            { label: 'Email', href: 'mailto:soumik7484@gmail.com' },
           ].map(l => (
             <a key={l.label} href={l.href} target="_blank" rel="noreferrer"
               style={{ fontSize: 12, fontWeight: 600, color: '#6b7280', textDecoration: 'none', transition: 'color 0.2s' }}
