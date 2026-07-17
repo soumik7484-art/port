@@ -190,6 +190,54 @@ export function HeroSection() {
 
           {/* LEFT */}
           <div style={{ opacity: visible ? 1 : 0, transform: visible ? 'translateY(0)' : 'translateY(28px)', transition: 'all 0.8s ease' }}>
+            {/* Waving Person / Welcome Badge */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 28 }}>
+              <div style={{
+                position: 'relative', width: 56, height: 56, borderRadius: '50%',
+                background: 'linear-gradient(135deg, #667eea15 0%, #764ba220 100%)',
+                border: '1.5px solid #e5e7eb', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.03)'
+              }}>
+                <svg width="40" height="40" viewBox="0 0 40 40" style={{ overflow: 'visible' }}>
+                  {/* Head */}
+                  <circle cx="20" cy="14" r="7" fill="#f5c5a3" />
+                  {/* Hair */}
+                  <path d="M12,14 Q20,4 28,14 Q20,10 12,14" fill="#3d2b1f" />
+                  {/* Body */}
+                  <path d="M9,36 C9,28 13,24 20,24 C27,24 31,28 31,36" fill="#667eea" />
+                  {/* Left Arm (resting) */}
+                  <path d="M9,25 Q6,30 9,35" stroke="#667eea" strokeWidth="3" strokeLinecap="round" fill="none" />
+                  {/* Right Waving Arm */}
+                  <g style={{ transformOrigin: '27px 24px', animation: 'waveHand 1.8s ease-in-out infinite' }}>
+                    <path d="M28,24 Q36,16 35,9" stroke="#f5c5a3" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+                    <circle cx="35" cy="8" r="2.5" fill="#f5c5a3" />
+                  </g>
+                </svg>
+                {/* Waving arm style */}
+                <style>{`
+                  @keyframes waveHand {
+                    0%, 100% { transform: rotate(0deg); }
+                    50%      { transform: rotate(-22deg); }
+                  }
+                  @keyframes speechBubble {
+                    from { transform: scale(0.9) translateY(4px); opacity: 0; }
+                    to   { transform: scale(1) translateY(0); opacity: 1; }
+                  }
+                `}</style>
+              </div>
+
+              {/* Welcome Speech Bubble */}
+              <div style={{
+                position: 'relative', background: '#f3f4f6', border: '1px solid #e5e7eb',
+                borderRadius: '16px 16px 16px 4px', padding: '10px 16px',
+                fontSize: 13, fontWeight: 600, color: '#374151',
+                boxShadow: '0 4px 14px rgba(0,0,0,0.03)',
+                animation: 'speechBubble 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards'
+              }}>
+                Welcome to my portfolio! 👋
+              </div>
+            </div>
+
             {/* Availability badge */}
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '6px 14px', borderRadius: 100, border: '1px solid #dcfce7', background: '#f0fdf4', marginBottom: 32 }}>
               <span style={{ width: 7, height: 7, borderRadius: '50%', background: '#22c55e', display: 'inline-block' }} />
@@ -579,7 +627,6 @@ export function ResumeSection() {
 
   const highlights = [
     { icon: '🎓', label: 'B.Tech AIML', sub: 'Narula Institute of Technology' },
-    { icon: '⭐', label: 'CGPA 8.58', sub: 'After 1st Semester' },
     { icon: '🏆', label: '3 Hackathons', sub: 'INNOVATEX ranker' },
     { icon: '🛠️', label: '2 AI Projects', sub: 'Medi AI & Legal AI' },
   ];

@@ -22,7 +22,6 @@ export const RESUME_DATA = {
       degree: "B.Tech in Artificial Intelligence & Machine Learning (AIML)",
       years: "2025 – 2029",
       status: "2nd Year, 3rd Semester",
-      cgpa: "8.58 (After 1st Semester)",
     },
     higherSecondary: {
       name: "Ramakrishna Vivekananda Mission, Barrackpore",
@@ -100,7 +99,7 @@ const KB = [
       "studying", "where do you study", "which college", "your college", "semester", "year",
     ],
     answer: () =>
-      `🎓 **College:**\n\n**${r.education.college.name}**\n${r.education.college.degree}\n📅 ${r.education.college.years}\n📊 ${r.education.college.status}\n⭐ CGPA: ${r.education.college.cgpa}`,
+      `🎓 **College:**\n\n**${r.education.college.name}**\n${r.education.college.degree}\n📅 ${r.education.college.years}\n📊 ${r.education.college.status}`,
   },
 
   // ── School ─────────────────────────────────────────────
@@ -118,10 +117,10 @@ const KB = [
   {
     keys: [
       "education", "academic", "qualification", "degree", "study", "student",
-      "cgpa", "marks", "percentage", "result", "score", "gpa", "grade",
+      "marks", "percentage", "result", "score", "grade",
     ],
     answer: () =>
-      `🎓 **Education Background:**\n\n**${r.education.college.name}**\n${r.education.college.degree} (${r.education.college.years})\n${r.education.college.status} | CGPA: ${r.education.college.cgpa}\n\n**${r.education.higherSecondary.name}**\n${r.education.higherSecondary.board} | ${r.education.higherSecondary.year}\nPercentage: ${r.education.higherSecondary.percentage}\n\n**${r.education.secondary.name}**\n${r.education.secondary.board} | ${r.education.secondary.year}\nPercentage: ${r.education.secondary.percentage}`,
+      `🎓 **Education Background:**\n\n**${r.education.college.name}**\n${r.education.college.degree} (${r.education.college.years})\n${r.education.college.status}\n\n**${r.education.higherSecondary.name}**\n${r.education.higherSecondary.board} | ${r.education.higherSecondary.year}\nPercentage: ${r.education.higherSecondary.percentage}\n\n**${r.education.secondary.name}**\n${r.education.secondary.board} | ${r.education.secondary.year}\nPercentage: ${r.education.secondary.percentage}`,
   },
 
   // ── Contact ────────────────────────────────────────────
