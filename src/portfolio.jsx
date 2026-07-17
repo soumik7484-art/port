@@ -580,7 +580,7 @@ export function ResumeSection() {
   const highlights = [
     { icon: '🎓', label: 'B.Tech AIML', sub: 'Narula Institute of Technology' },
     { icon: '⭐', label: 'CGPA 8.58', sub: 'After 1st Semester' },
-    { icon: '🏆', label: '3 Hackathons', sub: 'INNOVATEX winner' },
+    { icon: '🏆', label: '3 Hackathons', sub: 'INNOVATEX ranker' },
     { icon: '🛠️', label: '2 AI Projects', sub: 'Medi AI & Legal AI' },
   ];
 
